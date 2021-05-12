@@ -17,7 +17,9 @@ public class Background extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        new Hero (200, 200);
+        addObject(new Hero(), 200, 200);
+        addObject(new Projectile(), 400, 400);
+        
         
         
     }
