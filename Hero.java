@@ -45,9 +45,22 @@ public class Hero extends Actor
         {
             lives = lives - 1; 
         }
+        if(isTouching(Projectile2.class))
+        {
+            lives = lives - 3; 
+        }
+        if(isTouching(Enemy1.class))
+        {
+            lives = lives - 1; 
+        }
+        if(isTouching(Enemy2.class))
+        {
+            lives = lives - 1; 
+        }
         if(lives <= 0)
         {
             setLocation(100, 100);
+            
         }
     }
 }

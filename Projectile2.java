@@ -14,6 +14,8 @@ public class Projectile2 extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        GreenfootImage img = new GreenfootImage("gold-ball.png");
+        img.scale(img.getWidth()/3, img.getHeight()/3);
+        setImage(img);
     }    
 }
