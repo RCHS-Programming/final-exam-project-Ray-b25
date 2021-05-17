@@ -59,7 +59,7 @@ public class Hero extends Actor
         }
         if(lives <= 0)
         {
-            setLocation(100, 100);
+            Greenfoot.stop();
             
         }
     }

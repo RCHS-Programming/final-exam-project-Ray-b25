@@ -14,6 +14,18 @@ public class Enemy2 extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        move();
     }    
+    public void move()
+    {
+        Actor hero = getWorld().getObjects(Hero.class).get(0);
+        if(getX() < hero.getX())
+        {
+            setLocation(getX() + 2, getY());
+        }
+        if(getX() > hero.getX())
+        {
+            setLocation(getX() - 2, getY());
+        }
+    }
 }

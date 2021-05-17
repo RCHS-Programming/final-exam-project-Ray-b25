@@ -21,13 +21,13 @@ public class Sword extends Actor
         setImage(img);
         
         keyPress();
-        
-        Actor hero = getWorld().getObjects(Hero.class).get(0);
+      
         
     }    
     public void keyPress()
     {
         Actor hero = getWorld().getObjects(Hero.class).get(0);
+        setLocation(0, 800);
         if(Greenfoot.isKeyDown("w"))
         {
             setRotation(270);
@@ -48,5 +48,6 @@ public class Sword extends Actor
             setRotation(180);
             setLocation(hero.getX() - 50, hero.getY());
         }
+        
     }
 }
