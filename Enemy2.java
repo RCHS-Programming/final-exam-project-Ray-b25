@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Enemy2 extends Actor
 {
+    int enemy2DeathCounter = 0;
     /**
      * Act - do whatever the Enemy2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,6 +16,7 @@ public class Enemy2 extends Actor
     public void act() 
     {
         move();
+        
     }    
     public void move()
     {
@@ -27,5 +29,7 @@ public class Enemy2 extends Actor
         {
             setLocation(getX() - 2, getY());
         }
+        
     }
+    
 }

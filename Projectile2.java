@@ -17,5 +17,17 @@ public class Projectile2 extends Actor
         GreenfootImage img = new GreenfootImage("gold-ball.png");
         img.scale(img.getWidth()/3, img.getHeight()/3);
         setImage(img);
+        
+        move();
     }    
+    public void move()
+    {
+        Actor enemy3 = getWorld().getObjects(Enemy3.class).get(0);
+        setLocation(getX() + 5, getY());
+        if(getX() >= 550)
+        {
+            setLocation(35, enemy3.getY());
+            
+        }
+    }
 }
