@@ -24,7 +24,7 @@ public class Projectile2 extends Actor
     {
         Actor enemy3 = getWorld().getObjects(Enemy3.class).get(0);
         setLocation(getX() + 5, getY());
-        if(getX() >= 550)
+        if(getX() >= 580)
         {
             setLocation(35, enemy3.getY());
             

@@ -10,7 +10,7 @@ public class Enemy1 extends Actor
 {
     int enemy1DeathCounter = 0;
     int setSpawn = 1;
-    int test = 0;
+    
     /**
      * Act - do whatever the Enemy1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -55,13 +55,12 @@ public class Enemy1 extends Actor
                  
              }
              enemy1DeathCounter++;
-             test--;
+             
         }
     }
     public void respawn()
     {
-        System.out.println("WORLD: " + getWorld());
-        System.out.println("OBJECTS: " + getWorld().getObjects(Enemy1.class));
+        
         int numberOfEnemy1 = getWorld().getObjects(Enemy1.class).size();
         if(setSpawn >= 7)
         {
@@ -69,6 +68,7 @@ public class Enemy1 extends Actor
         }
         if(numberOfEnemy1 <= 2)
         {
+            setSpawn++;
             if(setSpawn == 1)
             {
                 getWorld().addObject(new Enemy1(), Greenfoot.getRandomNumber(600), 25);
@@ -105,7 +105,7 @@ public class Enemy1 extends Actor
                 getWorld().addObject(new Enemy1(), 575, Greenfoot.getRandomNumber(400));
                 
             }
-            setSpawn++;
+            
         }
            
             

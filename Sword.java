@@ -31,12 +31,12 @@ public class Sword extends Actor
         if(Greenfoot.isKeyDown("w"))
         {
             setRotation(270);
-            setLocation(hero.getX(), hero.getY() - 75);
+            setLocation(hero.getX(), hero.getY() - 50);
         }
         if(Greenfoot.isKeyDown("s"))
         {
             setRotation(90);
-            setLocation(hero.getX(), hero.getY() + 75);
+            setLocation(hero.getX(), hero.getY() + 50);
         }
         if(Greenfoot.isKeyDown("d"))
         {
