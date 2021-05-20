@@ -44,6 +44,7 @@ public class Enemy1 extends Actor
         }
         
     }
+    
     public void swordHit()
     {
         Actor sword = getWorld().getObjects(Sword.class).get(0);
