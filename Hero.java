@@ -57,7 +57,7 @@ public class Hero extends Actor
         
         if(lives <= 0)
         {
-            Greenfoot.stop();
+            Greenfoot.setWorld(new startingScreen());
             
         }
     }

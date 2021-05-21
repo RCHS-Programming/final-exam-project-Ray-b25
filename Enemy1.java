@@ -67,7 +67,7 @@ public class Enemy1 extends Actor
         {
             setSpawn = 1;
         }
-        if(numberOfEnemy1 <= 2)
+        if(numberOfEnemy1 <= 1)
         {
             setSpawn++;
             if(setSpawn == 1)

@@ -19,7 +19,7 @@ public class Background extends World
         super(600, 400, 1); 
         addObject(new Hero(), 200, 200);
         addObject(new Projectile(), 0, 800);
-        addObject(new Enemy1(), 25, 200);
+        
         addObject(new Enemy1(), 225, 0);
         addObject(new Enemy1(), 775, 200);
         addObject(new Enemy1(), 575, 400);
@@ -31,4 +31,5 @@ public class Background extends World
         
         
     }
+    
 }
